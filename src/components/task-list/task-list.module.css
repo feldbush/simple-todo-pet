@@ -1,0 +1,28 @@
+.pagination {
+    display: flex;
+}
+
+.pagination span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    width: 50px;
+    height: 50px;
+
+    border: 1px solid gray;
+    border-radius: 3px;
+}
+
+.pagination .current {
+    background-color: green;
+    color: white;
+}
+
+.pagination > * {
+    margin-right: 10px;
+}
+
+.pagination:last-child {
+    margin: 0;
+}
