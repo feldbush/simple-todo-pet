@@ -1,10 +1,7 @@
-import React, { Dispatch, useEffect } from "react";
+import React, { useEffect } from "react";
 import { useActions } from "../../store/hooks/useAction";
 import { useTypedSelector } from "../../store/hooks/useTypedSelector"
-import { TaskAction, TaskActions } from "../../types/tasks";
-
 import style from './task-list.module.css';
-
 
 export const TaskList : React.FC = (props) => {
     const {tasks, loading, error, page, limit} = useTypedSelector(state => state.taskReducer);
